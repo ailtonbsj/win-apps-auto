@@ -1,0 +1,1 @@
+4kslideshowmaker_1.8.1_x64.msi /qn /norestart
