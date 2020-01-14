@@ -1,0 +1,1 @@
+jre-8u231-windows-x64.exe /s REBOOT=0 SPONSORS=0 AUTO_UPDATE=0

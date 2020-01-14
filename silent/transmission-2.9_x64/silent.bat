@@ -1,0 +1,1 @@
+transmission-2.94-x64.msi /quiet /qn /norestart
