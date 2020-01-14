@@ -1,0 +1,1 @@
+inkscape-0.92.4-x64.msi /qn /norestart
