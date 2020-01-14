@@ -1,14 +1,18 @@
 set workDir=%cd%
+set workDrive=%cd:~0,2%
 
 echo "Installing WinRAR"
-call unzip.bat "%workDir%" "%workDir%\WinRAR 5.71 [win64].zip"
-cd "%workDir%\WinRAR 5.71 [win64]"
+call unzip.bat "%temp%" "%workDir%\WinRAR 5.71 [win64].zip"
+c:
+cd "%temp%\WinRAR 5.71 [win64]"
 call silent.bat
+%workDrive%
 cd "%workDir%"
-rmdir /s /q "%workDir%\WinRAR 5.71 [win64]\"
+rmdir /s /q "%temp%\WinRAR 5.71 [win64]\"
 
 echo "Installing on Win10"
 if "%1" == "Win10" (
+    call installProgram "win10Fix"
     call installProgram.bat "Acrobat Reader DC [win10]"
 )
 
@@ -43,3 +47,5 @@ call installProgram.bat "PDFSam 4.0.5 [win64]"
 call installProgram.bat "WinCDEmu 4.1 [win64]"
 call installProgram.bat "Kaspersky Free 20.0.14 [win64]"
 call installProgram.bat "CopySpider 1.6.0 [win]"
+
+echo "Finalizado. Voce DEVE reiniciar a maquina agora."
