@@ -3,10 +3,10 @@ set workDrive=%cd:~0,2%
 
 echo "Installing WinRAR"
 call unzip.bat "%temp%" "%workDir%\apps\winrar-5.71_x64.zip"
-copy "silent\winrar-5.71_x64.bat" "%temp%\winrar-5.71_x64\"
+copy "silent\winrar-5.71_x64" "%temp%\winrar-5.71_x64"
 c:
 cd "%temp%\winrar-5.71_x64"
-call winrar-5.71_x64.bat
+call silent.bat
 %workDrive%
 cd "%workDir%"
 rmdir /s /q "%temp%\winrar-5.71_x64\"
