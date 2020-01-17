@@ -13,12 +13,22 @@ rmdir /s /q "%temp%\winrar-5.71_x64\"
 
 echo "Installing on Win10"
 if "%1" == "Win10" (
-    call installProgram "win10-fast_x64"
     call installProgram.bat "acrobat-reader-dc_x64"
+    call installProgram "win10-fast_x64"
+    call installProgram.bat "libreoffice-6.1_x64"
+    call installProgram.bat "audacity-2.3_x64"
 )
 
-echo "Installing on Win7 SP1"
-if "%1" == "Win7" (
+echo "Installing on Win7 SP1 x64"
+if "%1" == "Win7SP1x64" (
+    call installProgram.bat "acrobat-reader-dc_x64"
+    call installProgram.bat "framework-.net-4.0_x64"
+    call installProgram.bat "libreoffice-6.1_x64"
+    call installProgram.bat "audacity-2.3_x64"
+)
+
+echo "Installing on Win7 x64"
+if "%1" == "Win7x64" (
     call installProgram.bat "acrobat-reader-11_x64"
     call installProgram.bat "framework-.net-4.0_x64"
 )
@@ -27,7 +37,6 @@ echo "Installing Generics"
 call installProgram.bat "vlc-media-player-3.0_x64"
 call installProgram.bat "gimp-2.10_x64"
 call installProgram.bat "k-lite-codec-pack-15.0_x64"
-call installProgram.bat "libreoffice-6.1_x64"
 call installProgram.bat "windows-movie-maker-2012_x64"
 call installProgram.bat "inkscape-0.9_x64"
 call installProgram.bat "visual-studio-code-1.40_x64"
@@ -43,7 +52,6 @@ call installProgram.bat "anydesk-5.4_x64"
 call installProgram.bat "transmission-2.9_x64"
 call installProgram.bat "4k-slideshow-maker_x64"
 call installProgram.bat "format-factory-4.3_x64"
-call installProgram.bat "audacity-2.3_x64"
 call installProgram.bat "pdfsam-4.0_x64"
 call installProgram.bat "wincdemu-4.1_x64"
 call installProgram.bat "kaspersky-free-20.0_x64"

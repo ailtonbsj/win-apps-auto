@@ -1,1 +1,0 @@
-call main.bat Win7
