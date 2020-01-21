@@ -1,0 +1,1 @@
+call main.bat Win7SP1x64 x86
