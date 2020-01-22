@@ -1,0 +1,1 @@
+"Firefox Setup 72.0.2.exe" -ms

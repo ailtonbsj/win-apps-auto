@@ -1,0 +1,1 @@
+googlechromestandaloneenterprise.msi /quiet /norestart

@@ -1,1 +1,1 @@
-call main.bat Win7SP1x64 x86
+call main.bat Win7SP1 x86
