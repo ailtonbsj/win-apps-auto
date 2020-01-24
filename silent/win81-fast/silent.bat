@@ -2,6 +2,7 @@ regedit /s explorer.reg
 regedit /s performance.reg
 regedit /s disableAntiSpyware.reg
 regedit /s update.reg
+regedit /s appOnStartMenu.reg
 
 REM Windows Update
 net stop wuauserv
