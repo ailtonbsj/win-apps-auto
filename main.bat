@@ -16,11 +16,13 @@ if "%2" == "x86" (
 
     if "%1" == "Win7" (
         call installProgram.bat "framework-.net-4.0"
+        call installProgram.bat "win7-fast"
     )
 
     if "%1" == "Win7SP1" (
         call installProgram.bat "framework-.net-4.0"
         call installProgram.bat "libreoffice-6.2.8_x86"
+        call installProgram.bat "win7-fast"
     )
 
     call installProgram.bat "java-development-kit-8_x86"
@@ -45,7 +47,6 @@ if "%2" == "x86" (
     
     if "%1" == "Win7" (
         call installProgram.bat "acrobat-reader-11.0.0"
-        call installProgram.bat "win7-fast"
     )
 
     if "%1" == "Win7SP1" (
@@ -53,7 +54,6 @@ if "%2" == "x86" (
         call installProgram.bat "audacity-2.3"
         call installProgram.bat "windows-movie-maker-2012"
         call installProgram.bat "kaspersky-free-20.0_x86"
-        call installProgram.bat "win7-fast"
     )
 )
 
@@ -72,19 +72,23 @@ if "%2" == "x64" (
 
     if "%1" == "Win7" (
         call installProgram.bat "framework-.net-4.0"
+        call installProgram.bat "win7-fast"
     )
 
     if "%1" == "Win7SP1" (
         call installProgram.bat "framework-.net-4.0"
         call installProgram.bat "libreoffice-6.2.8_x64"
+        call installProgram.bat "win7-fast"
     )
 
     if "%1" == "Win8" (
         call installProgram.bat "libreoffice-6.2.8_x64"
+        call installProgram.bat "win81-fast"
     )
 
     if "%1" == "Win10" (
         call installProgram.bat "libreoffice-6.2.8_x64"
+        call installProgram.bat "win10-fast_x64"
     )
 
     call installProgram.bat "java-se-runtime-environment-8_x64"
@@ -110,7 +114,6 @@ if "%2" == "x64" (
 
     if "%1" == "Win7" (
         call installProgram.bat "acrobat-reader-11.0.0"
-        call installProgram.bat "win7-fast"
     )
 
     if "%1" == "Win7SP1" (
@@ -118,7 +121,6 @@ if "%2" == "x64" (
         call installProgram.bat "audacity-2.3"
         call installProgram.bat "windows-movie-maker-2012"
         call installProgram.bat "kaspersky-free-20.0_x64"
-        call installProgram.bat "win7-fast"
     )
 
     if "%1" == "Win8" (
@@ -126,7 +128,6 @@ if "%2" == "x64" (
         call installProgram.bat "audacity-2.3"
         call installProgram.bat "windows-movie-maker-2012"
         call installProgram.bat "kaspersky-free-20.0_x64"
-        call installProgram.bat "win81-fast"
     )
 
     if "%1" == "Win10" (
@@ -134,7 +135,6 @@ if "%2" == "x64" (
         call installProgram.bat "audacity-2.3"
         call installProgram.bat "windows-movie-maker-2012"
         call installProgram.bat "kaspersky-free-20.0_x64"
-        call installProgram.bat "win10-fast_x64"
     )
 )
 
