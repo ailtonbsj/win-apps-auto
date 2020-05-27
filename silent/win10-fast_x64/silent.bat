@@ -1,6 +1,3 @@
-powershell Set-ExecutionPolicy RemoteSigned
-powershell .\removeApps.ps1
-
 regedit /s explorer.reg
 regedit /s performance.reg
 regedit /s taskbar.reg
@@ -34,3 +31,6 @@ REM wmic useraccount where name="%USERNAME%" get sid
 
 REM [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\SystemProtectedUserData\S-1-5-21-150643285-2270290189-2103209189-1001\AnyoneRead\LockScreen]
 REM "HideLogonBackgroundImage"=dword:00000001
+
+powershell Set-ExecutionPolicy RemoteSigned
+powershell .\removeApps.ps1

@@ -88,7 +88,6 @@ if "%2" == "x64" (
 
     if "%1" == "Win10" (
         call installProgram.bat "libreoffice-6.2.8_x64"
-        call installProgram.bat "win10-fast_x64"
     )
 
     call installProgram.bat "java-se-runtime-environment-8_x64"
@@ -135,6 +134,7 @@ if "%2" == "x64" (
         call installProgram.bat "audacity-2.3"
         call installProgram.bat "windows-movie-maker-2012"
         call installProgram.bat "kaspersky-free-20.0_x64"
+        call installProgram.bat "win10-fast_x64"
     )
 )
 
