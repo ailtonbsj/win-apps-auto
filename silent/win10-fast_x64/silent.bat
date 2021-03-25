@@ -1,7 +1,7 @@
 regedit /s explorer.reg
 regedit /s performance.reg
 regedit /s taskbar.reg
-regedit /s wallpaper.reg
+REM regedit /s wallpaper.reg
 regedit /s transparency.reg
 regedit /s login.reg
 regedit /s disableAntiSpyware.reg
@@ -34,3 +34,7 @@ REM "HideLogonBackgroundImage"=dword:00000001
 
 powershell Set-ExecutionPolicy RemoteSigned
 powershell .\removeApps.ps1
+
+taskkill /f /im OneDrive.exe
+timeout 1
+%SystemRoot%\SysWOW64\OneDriveSetup.exe /uninstall

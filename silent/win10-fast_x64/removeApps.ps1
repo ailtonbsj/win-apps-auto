@@ -20,7 +20,8 @@ Get-AppxPackage *CandyCrush* | Remove-AppxPackage
 Get-AppxPackage *MixedReality* | Remove-AppxPackage
 Get-AppxPackage *OneConnect* | Remove-AppxPackage
 Get-AppxPackage *office* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.549981C3F5F10* | Remove-AppxPackage
+Get-AppxPackage *ZuneVideo* | Remove-AppxPackage
 
-taskkill /f /im OneDrive.exe
-Invoke-Expression "$env:SystemRoot\System32\OneDriveSetup.exe /uninstall"
-Invoke-Expression "$env:SystemRoot\SysWOW64\OneDriveSetup.exe /uninstall"
+ps onedrive | Stop-Process -Force
+start-process "$env:windir\SysWOW64\OneDriveSetup.exe" "/uninstall"
